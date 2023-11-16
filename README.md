@@ -4,9 +4,7 @@
 
 Dentro del script de python se pueden encontrar las clases responsables de la normalizacion de senales de audio en formato wave(.wav)
 
-
 Para aplicar canvolucion a una senal de audio es necesario cambiar la senal de muestra que se encuentra como 'sample.wav'
-
 
 
 
