@@ -104,14 +104,14 @@ def convolution_reverb(audio_file, ir_file, output_file):
     wave = convolution.make_wave()
     wave.write(output_file)
 
+path = "./convolution-reverb/audios/"
+sample = path + "sample.wav"
+ir1 = path + "ir_airRaid.wav"
+ir2 = path + "ir_hangar.wav"
+ir3 = path + "ir_submarine.wav"
+ir4 = path + "ir_woodBuilding.wav"
 
-sample = "./sample.wav"
-ir1 = "./ir_airRaid.wav"
-ir2 = "./ir_hangar.wav"
-ir3 = "./ir_submarine.wav"
-ir4 = "./ir_woodBuilding.wav"
-
-convolution_reverb(sample, ir1, "./result_airRaid.wav")
-convolution_reverb(sample, ir2, "./result_hangar.wav")
-convolution_reverb(sample, ir3, "./result_submarine.wav")
-convolution_reverb(sample, ir4, "./result_woodBuilding.wav")
+convolution_reverb(sample, ir1, path + "result_airRaid.wav")
+convolution_reverb(sample, ir2, path + "result_hangar.wav")
+convolution_reverb(sample, ir3, path + "result_submarine.wav")
+convolution_reverb(sample, ir4, path + "result_woodBuilding.wav")
